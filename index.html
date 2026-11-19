@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حكاية حاجة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14264A;--navy-2:#1B2A49;--amber:#F5A623;--orange:#C85F0A;--cream:#FFF4DC;--muted:#B9C2D6;--font:'Cairo',system-ui,'Segoe UI',Tahoma,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--navy);color:var(--cream);font-family:var(--font);min-height:100%;display:flex;justify-content:center;padding:32px 16px 40px}
+main{width:100%;max-width:440px;display:flex;flex-direction:column;gap:24px;align-items:stretch}
+header{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+header img{width:132px;height:132px;border-radius:50%;box-shadow:0 0 0 3px var(--amber)}
+h1{margin:0;font-size:2rem;font-weight:900;text-wrap:balance}
+.tag{margin:0;color:var(--muted);font-size:1.05rem;line-height:1.7;text-wrap:balance}
+.card{background:var(--navy-2);border:1px solid rgba(245,166,35,.28);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:14px}
+h2{margin:0;font-size:1.15rem;font-weight:700;color:var(--amber)}
+p{margin:0;line-height:1.8}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--amber);color:var(--navy);text-decoration:none;font-weight:700;font-size:1.05rem;padding:14px 18px;border-radius:12px;border:0;cursor:pointer;font-family:inherit;width:100%}
+.btn.alt{background:transparent;color:var(--cream);border:1.5px solid var(--amber)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,.copy:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.val{direction:ltr;unicode-bidi:plaintext;font-weight:500;font-size:.95rem;opacity:.85}
+.row{display:flex;gap:8px;align-items:stretch}
+.row .btn{flex:1}
+.copy{background:transparent;color:var(--cream);border:1.5px solid var(--amber);border-radius:12px;font-family:inherit;font-weight:700;padding:0 16px;cursor:pointer}
+.steps{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.steps li{display:flex;gap:12px;align-items:flex-start;line-height:1.7}
+.steps b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--orange);color:var(--cream);display:grid;place-items:center;font-size:.9rem}
+footer{text-align:center;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+<img src="data:image/webp;base64,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" alt="شعار حكاية حاجة: حكواتي بطربوش">
+<h1>حكاية حاجة</h1>
+<p class="tag">أصل وحكاية أي حاجة بنشوفها كل يوم</p>
+</header>
+<section class="card" aria-labelledby="collab">
+<h2 id="collab">For collaborations &amp; ads</h2>
+<p>عندك براند أو منتج؟ بنحكي أصله وحكايته في ريل قصير بنفس قالب القناة.</p>
+<a class="btn" href="https://wa.me/201008606299" target="_blank" rel="noopener"><span>تواصل على واتساب</span><span class="val">+20 100 860 6299</span></a>
+<div class="row">
+<a class="btn alt" href="mailto:hussin.s.mansour@gmail.com"><span>إيميل</span><span class="val">hussin.s.mansour@gmail.com</span></a>
+<button class="copy" id="copy" type="button" aria-label="نسخ الإيميل">نسخ</button>
+</div>
+</section>
+<section class="card" aria-labelledby="how">
+<h2 id="how">حكاية براند</h2>
+<ol class="steps">
+<li><b>1</b><span>بنتفق على المنتج أو الشركة والرسالة المطلوبة.</span></li>
+<li><b>2</b><span>بنكتب سكريبت قصصي عن أصل الحاجة وبتوافق عليه.</span></li>
+<li><b>3</b><span>بننشر ريل 9:16 على إنستجرام بعلامة الشراكة المدفوعة.</span></li>
+</ol>
+</section>
+<footer>@hekaythaga</footer>
+</main>
+<script>
+(function(){var btn=document.getElementById('copy');btn.addEventListener('click',function(){var t='hussin.s.mansour@gmail.com';try{navigator.clipboard.writeText(t).then(function(){btn.textContent='تم النسخ'},function(){btn.textContent='انسخه يدوياً'})}catch(e){btn.textContent='انسخه يدوياً'}setTimeout(function(){btn.textContent='نسخ'},2000)})})();
+</script>
+</body>
+</html>
